@@ -174,7 +174,7 @@ header {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 200%;
+    width: 110%;
     height: 1.5px;
     background: #000;
 }
@@ -184,3 +184,40 @@ header {
     font-weight: 300;
     line-height: 1;
 }
+
+.footer-custom {
+    min-height: 700px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer-custom::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    width: 200vw;
+    height: 500px;
+    background: white;
+    transform: translate(-50%, -50%) rotate(10deg);
+    transform-origin: center;
+    z-index: 1;
+}
+
+.social-icon i {
+    transition: color 0.3s;
+}
+
+.social-icon:hover i {
+    color: #ff0000;
+}
+
+@media (max-width: 600px) {
+    .footer-custom::before {
+        top: -30%;
+    }
+}
+
