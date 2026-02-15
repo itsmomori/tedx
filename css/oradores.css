@@ -40,3 +40,24 @@ h4{
 .oradores-section .container-fluid {
     padding-left: 2rem !important;
 }
+
+/* Tipografia responsiva para mobile */
+@media (max-width: 600px) {
+    h3{
+        font-size: 2.25rem;
+    }
+
+    h4{
+        font-size: 1.125rem;
+    }
+
+    .big-title{
+        font-size: 3.25rem;
+    }
+
+    /* texto "ORADORES / PERFORMANCES / IDEIAS" mais pequeno no mobile */
+    .nomes li{
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+}
