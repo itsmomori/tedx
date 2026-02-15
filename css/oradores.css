@@ -1,9 +1,12 @@
-/* Estilos específicos da página edicoes */
-body{
-    background-color: #E1E1E1;
+
+
+.navbar {
+    z-index:100;
 }
+
 .oradores-section {
 	color: #E1E1E1;
+    overflow: hidden;
 }
 
 h3{
@@ -16,10 +19,8 @@ h4{
     font-weight: 400;
 }
 
-/* Linha por baixo dos nomes em branco nesta página */
 .oradores-section .nomes li::after {
     background: #E1E1E1;
-    width: 100%;
 }
 
 .big-title{
@@ -29,11 +30,8 @@ h4{
     margin-right: 0.5rem;
 }
 
-/* Coluna direita encostada ao limite direito do ecrã, sem margin/padding adicionais */
-.oradores-section .col-12.col-lg-5.offset-lg-1.mt-5 {
-    padding: 0;
-    margin: 0;
-    margin-left: auto;
+.membros {
+    background-color: #FAFAFA;
 }
 
 /* Repor margem interna à esquerda da secção, como antes */
@@ -42,7 +40,7 @@ h4{
 }
 
 /* Tipografia responsiva para mobile */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     h3{
         font-size: 2.25rem;
     }
@@ -55,9 +53,10 @@ h4{
         font-size: 3.25rem;
     }
 
-    /* texto "ORADORES / PERFORMANCES / IDEIAS" mais pequeno no mobile */
-    .nomes li{
-        font-size: 1.25rem;
-        margin-bottom: 1.5rem;
-    }
+.text-neutral {
+    color: #7D7D7D;
+}
+  .nomes li {
+    font-size: 1.8rem;
+  }
 }

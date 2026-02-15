@@ -2,32 +2,37 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     background-color: black;
+    overflow-x:hidden;
 }
 
 .bg-black {
     background-color: #000;
 }
 
+.bg-white {
+    background-color: #FAFAFA;
+}
+
 .btn-bilhetes {
     background-color: #FC1A26;
-    color: #fff;
+    color: #FAFAFA;
     border: none;
     border-radius: 0px;
 }
 
 .btn-bilhetes:hover {
     background-color: #e5161f;
-    color: #fff;
+    color: #FAFAFA;
 }
 
-header {
-    overflow: visible;
+.navbar {
+    z-index:100;
 }
 
 .navbar-toggler-icon-custom {
     width: 24px;
     height: 2px;
-    background-color: #fff;
+    background-color: #FAFAFA;
     display: block;
     position: relative;
     transition: background-color 0.3s ease;
@@ -38,7 +43,7 @@ header {
     content: "";
     width: 24px;
     height: 2px;
-    background-color: #fff;
+    background-color: #FAFAFA;
     position: absolute;
     left: 0;
     transition: transform 0.3s ease, top 0.3s ease;
@@ -83,9 +88,9 @@ header {
 .about-card {
     z-index: 2;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-        position: relative;
+    position: relative;
     z-index: 2;
-    background: white;
+    background-color: #FAFAFA;
     max-width: 900px;
     margin: 0 auto;
     padding: 3rem;
@@ -119,10 +124,10 @@ header {
     content: "";
     position: absolute;
     left: -10%;
-    top: 40%;
+    top: 50%;
     width: 120%;
-    height: 300px;
-    background: white;
+    height: 350px;
+    background-color: #FAFAFA;
     transform: rotate(15deg);
     z-index: 1;
 }
@@ -133,10 +138,15 @@ header {
     left: -10%;
     top: 80%;
     width: 120%;
-    height: 400px;
+    height: 450px;
     background: black;
     transform: rotate(15deg);
     z-index: 0;
+}
+
+.oradores-section {
+    background-color: #FAFAFA;
+      overflow: hidden;
 }
 
 .img-box {
@@ -174,7 +184,7 @@ header {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 110%;
+    width: 150%;
     height: 1.5px;
     background: #000;
 }
@@ -198,7 +208,7 @@ header {
     content: "";
     position: absolute;
     top: -10%;
-    left: 50%;
+    left: 40%;
     width: 200vw;
     height: 500px;
     background: #FAFAFA;
@@ -222,9 +232,31 @@ header {
     color: #ff0000;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .footer-custom::before {
         top: -30%;
+    }
+
+    .about::before {
+        left: -20%;
+        top: 7%;
+        width: 160%;
+        height: 700px;
+        transform: rotate(10deg);
+    }
+
+    .about::after {
+        left: -20%;
+        top: 60%;
+        width: 160%;
+        height: 400px;
+        transform: rotate(10deg);
+    }
+        .about-card {
+        background-color: transparent;
+        box-shadow: none !important;
+        border-radius: 0;
+        padding: 0 1rem;
     }
 }
 
