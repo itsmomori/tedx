@@ -201,10 +201,17 @@ header {
     left: 50%;
     width: 200vw;
     height: 500px;
-    background: white;
+    background: #FAFAFA;
     transform: translate(-50%, -50%) rotate(10deg);
     transform-origin: center;
     z-index: 1;
+}
+
+.footer-x{
+    width:40%;
+    position:absolute;
+    right:3rem;
+    top:8rem;
 }
 
 .social-icon i {
