@@ -1,9 +1,3 @@
-
-
-.navbar {
-    z-index:100;
-}
-
 .oradores-section {
 	color: #E1E1E1;
 }
@@ -33,108 +27,11 @@ h4{
     background-color: #FAFAFA;
 }
 
-/* Repor margem interna à esquerda da secção, como antes */
-.oradores-section .container-fluid {
-    padding-left: 2rem !important;
-}
-
-/* Barra "ORADORES" sticky no container interno */
-.oradores-container {
-  background-color: #fafafa;
-  overflow: visible;
-  margin-top: 0; /* evitar barra vazia acima */
-  position: relative;
-}
-
-.oradores-flow {
-  position: relative;
-}
-/* Content wrapper */
-.content {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.oradores-sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 80px;              /* fica colado abaixo da navbar */
-  z-index: 90;
-  width: 100%;
-  padding-top: 40px;   /* espaço interno */
-  border-bottom: 0.5px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fafafa;
-}
-
-/* Logo group */
-.logo-group {
-  width: 31.635px;
-  height: 34px;
-  flex-shrink: 0;
-}
-
-.logo-svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* Text container */
-.text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1 0 0;
-  height: 66px;
-  min-width: 1px;
-  min-height: 1px;
-}
-
-.text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 1.34;
-  color: black;
-  white-space: pre-wrap;
-}
-
-.orador-detalhe {
-  background-color: #FAFAFA;
-}
-
-.orador-detalhe-img {
-  width: 100%;
-  height: 100%;
-  min-height: 280px;
-  max-height: 420px;
-  object-fit: cover;
-  display: block;
-}
-
-.orador-social {
-  font-size: 1.75rem;
-  line-height: 1;
-}
-
-.orador-detalhe-titulo {
-  font-size: 1.625rem;
-  font-weight: 400;
-  color: #7D7D7D;
-  margin-bottom: 1rem;
-}
-
-.orador-detalhe-texto {
-  font-size: 1rem;
-  line-height: 1.45;
-  color: #1D1D1D;
-  max-width: 620px;
+.sticky-oradores {
+    position: sticky;
+    top: 90px;
+    z-index: 101;
+    border-bottom: 0.25px solid #000000;
 }
 
 .appear-on-load {
@@ -161,35 +58,7 @@ h4{
   filter: blur(0);
 }
 
-/* Responsive design */
-
-/* Tablets and smaller desktops (max-width: 1024px) */
-@media screen and (max-width: 1024px) {
-  .oradores-sticky {
-    padding: 60px 0 0;
-  }
-  
-  .text {
-    font-size: 22px;
-  }
-  
-  .logo-group {
-    width: 28px;
-    height: 30px;
-  }
-  
-  .text-container {
-    height: 56px;
-  }
-}
-
-/* Tipografia responsiva para mobile */
 @media (max-width: 768px) {
-  .oradores-sticky {
-    top: 90px;
-    padding-top: 0;
-  }
-
     h3{
         font-size: 2.25rem;
     }

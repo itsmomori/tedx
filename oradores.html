@@ -35,7 +35,6 @@
                 <span class="navbar-toggler-icon-custom"></span>
             </button>
 
-            <!-- ALTERAR HREF -->
             <div class="collapse navbar-collapse" id="navbarTedx">
                 <ul class="navbar-nav mx-auto gap-2 gap-lg-4 mt-2 mt-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -65,7 +64,7 @@
                     </div>
 
                     <!-- direito -->
-                    <div class="col-12 col-lg-5 offset-lg-1 mt-2 mt-lg-0">
+                    <div class="col-12 col-lg-5 offset-lg-1 mt-5">
                         <ul class="list-unstyled nomes">
                             <li>
                                 <h1 class="big-title px-3 px-lg-0">26</h1> ORADORES
@@ -74,7 +73,7 @@
                                 <h1 class="big-title px-3 px-lg-0">5</h1> PERFORMANCES
                             </li>
                             <li>
-                                <img src="images/∞.svg" alt="Infinito" class="px-3 px-lg-0">  IDEIAS
+                                <img src="images/∞.svg" alt="Infinito" class="px-3 px-lg-0"> IDEIAS
                             </li>
                         </ul>
                     </div>
@@ -86,47 +85,63 @@
         </div>
     </main>
 
-    <section class="oradores-flow">
-    <section class="oradores-container oradores-sticky">
-    <div class="border-overlay"></div>
-    <div class="content">
-      <div class="logo-group">
-        <svg class="logo-svg" fill="none" viewBox="0 0 31.6348 34">
-          <g>
-            <path d="M0.295652 0L7.3913 10.6435L20.9913 13.8957L29.5652 0H22.1739L15.0783 11.2348L8.27826 0H0.295652Z" fill="#FC1A26" />
-            <path d="M10.9391 16.8522L7.3913 11.8261L20.6957 15.0783L19.513 16.8522L31.6348 34H23.0609L15.3739 22.1739L8.27826 34H0L10.9391 16.8522Z" fill="black" />
-            <circle cx="14.7826" cy="17.4435" fill="#FAFAFA" r="1.47826" />
-            <path d="M8.86956 23.9478L13.6 18.0348L15.9652 17.4435L22.4696 26.313L24.2435 30.4522L20.9913 27.2L14.7826 18.3304L10.6435 24.5391L7.09565 27.4957L8.86956 23.9478Z" fill="#FAFAFA" />
-          </g>
-        </svg>
-      </div>
-      <div class="text-container">
-        <p class="text">ORADORES</p>
-      </div>
-    </div>
-    </section>
+    <!-- ORADORES STICKY -->
+        <div class="sticky-oradores bg-light py-4">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="d-flex align-items-center gap-2">
 
-    <section class="orador-detalhe">
-        <div class="container-fluid px-4 px-lg-5 py-5">
-            <div class="row g-4 g-lg-5 align-items-start">
-                <div class="col-12 col-lg-6">
-                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="orador-detalhe-img">
+                    <svg width="31" height="34" viewBox="0 0 31.6348 34" fill="none">
+                        <g>
+                            <path
+                                d="M0.295652 0L7.3913 10.6435L20.9913 13.8957L29.5652 0H22.1739L15.0783 11.2348L8.27826 0H0.295652Z"
+                                fill="#FC1A26" />
+                            <path
+                                d="M10.9391 16.8522L7.3913 11.8261L20.6957 15.0783L19.513 16.8522L31.6348 34H23.0609L15.3739 22.1739L8.27826 34H0L10.9391 16.8522Z"
+                                fill="black" />
+                            <circle cx="14.7826" cy="17.4435" fill="#FAFAFA" r="1.47826" />
+                            <path
+                                d="M8.86956 23.9478L13.6 18.0348L15.9652 17.4435L22.4696 26.313L24.2435 30.4522L20.9913 27.2L14.7826 18.3304L10.6435 24.5391L7.09565 27.4957L8.86956 23.9478Z"
+                                fill="#FAFAFA" />
+                        </g>
+                    </svg>
+
+                    <p class="mb-0 fs-4 fw-normal text-dark">
+                        ORADORES
+                    </p>
+
                 </div>
+            </div>
+        </div>
+
+    <section class="bg-light py-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start appear-on-scroll">
+
+                <div class="col-12 col-lg-6">
+                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="img-fluid w-100"
+                        style="object-fit: cover; max-height: 420px;">
+                </div>
+
                 <div class="col-12 col-lg-6">
                     <div class="d-flex gap-3 mb-3">
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="Instagram">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="LinkedIn">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-                    <h2 class="orador-detalhe-titulo">Ana Sofia Almeida</h2>
-                    <p class="orador-detalhe-texto mb-0">
+
+                    <h2 class="fs-4 fw-normal text-secondary mb-3">
+                        Ana Sofia Almeida
+                    </h2>
+
+                    <p class="mb-0 text-dark" style="max-width: 620px;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -134,27 +149,34 @@
         </div>
     </section>
 
-    <section class="orador-detalhe">
-        <div class="container-fluid px-4 px-lg-5 py-5">
-            <div class="row g-4 g-lg-5 align-items-start">
+    <section class="bg-light py-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start appear-on-scroll">
                 <div class="col-12 col-lg-6">
-                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="orador-detalhe-img">
+                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="img-fluid w-100"
+                        style="object-fit: cover; max-height: 420px;">
                 </div>
+
                 <div class="col-12 col-lg-6">
                     <div class="d-flex gap-3 mb-3">
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="Instagram">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="LinkedIn">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-                    <h2 class="orador-detalhe-titulo">Ana Sofia Almeida</h2>
-                    <p class="orador-detalhe-texto mb-0">
+
+                    <h2 class="fs-4 fw-normal text-secondary mb-3">
+                        Ana Sofia Almeida
+                    </h2>
+
+                    <p class="mb-0 text-dark" style="max-width: 620px;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -162,27 +184,35 @@
         </div>
     </section>
 
-    <section class="orador-detalhe">
-        <div class="container-fluid px-4 px-lg-5 py-5">
-            <div class="row g-4 g-lg-5 align-items-start">
+    <section class="bg-light py-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start appear-on-scroll">
+
                 <div class="col-12 col-lg-6">
-                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="orador-detalhe-img">
+                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="img-fluid w-100"
+                        style="object-fit: cover; max-height: 420px;">
                 </div>
+
                 <div class="col-12 col-lg-6">
                     <div class="d-flex gap-3 mb-3">
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="Instagram">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="LinkedIn">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-                    <h2 class="orador-detalhe-titulo">Ana Sofia Almeida</h2>
-                    <p class="orador-detalhe-texto mb-0">
+
+                    <h2 class="fs-4 fw-normal text-secondary mb-3">
+                        Ana Sofia Almeida
+                    </h2>
+
+                    <p class="mb-0 text-dark" style="max-width: 620px;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -190,27 +220,35 @@
         </div>
     </section>
 
-    <section class="orador-detalhe">
-        <div class="container-fluid px-4 px-lg-5 py-5">
-            <div class="row g-4 g-lg-5 align-items-start">
+    <section class="bg-light py-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start appear-on-scroll">
+
                 <div class="col-12 col-lg-6">
-                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="orador-detalhe-img">
+                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="img-fluid w-100"
+                        style="object-fit: cover; max-height: 420px;">
                 </div>
+
                 <div class="col-12 col-lg-6">
                     <div class="d-flex gap-3 mb-3">
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="Instagram">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="LinkedIn">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-                    <h2 class="orador-detalhe-titulo">Ana Sofia Almeida</h2>
-                    <p class="orador-detalhe-texto mb-0">
+
+                    <h2 class="fs-4 fw-normal text-secondary mb-3">
+                        Ana Sofia Almeida
+                    </h2>
+
+                    <p class="mb-0 text-dark" style="max-width: 620px;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -218,27 +256,35 @@
         </div>
     </section>
 
-    <section class="orador-detalhe">
-        <div class="container-fluid px-4 px-lg-5 py-5">
-            <div class="row g-4 g-lg-5 align-items-start">
+    <section class="bg-light py-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start appear-on-scroll">
+
                 <div class="col-12 col-lg-6">
-                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="orador-detalhe-img">
+                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="img-fluid w-100"
+                        style="object-fit: cover; max-height: 420px;">
                 </div>
+
                 <div class="col-12 col-lg-6">
                     <div class="d-flex gap-3 mb-3">
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="Instagram">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="LinkedIn">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-                    <h2 class="orador-detalhe-titulo">Ana Sofia Almeida</h2>
-                    <p class="orador-detalhe-texto mb-0">
+
+                    <h2 class="fs-4 fw-normal text-secondary mb-3">
+                        Ana Sofia Almeida
+                    </h2>
+
+                    <p class="mb-0 text-dark" style="max-width: 620px;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -246,27 +292,35 @@
         </div>
     </section>
 
-    <section class="orador-detalhe">
-        <div class="container-fluid px-4 px-lg-5 py-5">
-            <div class="row g-4 g-lg-5 align-items-start">
+    <section class="bg-light py-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start appear-on-scroll">
+
                 <div class="col-12 col-lg-6">
-                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="orador-detalhe-img">
+                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="img-fluid w-100"
+                        style="object-fit: cover; max-height: 420px;">
                 </div>
+
                 <div class="col-12 col-lg-6">
                     <div class="d-flex gap-3 mb-3">
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="Instagram">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="LinkedIn">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-                    <h2 class="orador-detalhe-titulo">Ana Sofia Almeida</h2>
-                    <p class="orador-detalhe-texto mb-0">
+
+                    <h2 class="fs-4 fw-normal text-secondary mb-3">
+                        Ana Sofia Almeida
+                    </h2>
+
+                    <p class="mb-0 text-dark" style="max-width: 620px;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -274,27 +328,35 @@
         </div>
     </section>
 
-    <section class="orador-detalhe">
-        <div class="container-fluid px-4 px-lg-5 py-5">
-            <div class="row g-4 g-lg-5 align-items-start">
+    <section class="bg-light py-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start appear-on-scroll">
+
                 <div class="col-12 col-lg-6">
-                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="orador-detalhe-img">
+                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="img-fluid w-100"
+                        style="object-fit: cover; max-height: 420px;">
                 </div>
+
                 <div class="col-12 col-lg-6">
                     <div class="d-flex gap-3 mb-3">
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="Instagram">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="LinkedIn">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-                    <h2 class="orador-detalhe-titulo">Ana Sofia Almeida</h2>
-                    <p class="orador-detalhe-texto mb-0">
+
+                    <h2 class="fs-4 fw-normal text-secondary mb-3">
+                        Ana Sofia Almeida
+                    </h2>
+
+                    <p class="mb-0 text-dark" style="max-width: 620px;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -302,27 +364,35 @@
         </div>
     </section>
 
-    <section class="orador-detalhe">
-        <div class="container-fluid px-4 px-lg-5 py-5">
-            <div class="row g-4 g-lg-5 align-items-start">
+    <section class="bg-light py-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start appear-on-scroll">
+
                 <div class="col-12 col-lg-6">
-                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="orador-detalhe-img">
+                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="img-fluid w-100"
+                        style="object-fit: cover; max-height: 420px;">
                 </div>
+
                 <div class="col-12 col-lg-6">
                     <div class="d-flex gap-3 mb-3">
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="Instagram">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="LinkedIn">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-                    <h2 class="orador-detalhe-titulo">Ana Sofia Almeida</h2>
-                    <p class="orador-detalhe-texto mb-0">
+
+                    <h2 class="fs-4 fw-normal text-secondary mb-3">
+                        Ana Sofia Almeida
+                    </h2>
+
+                    <p class="mb-0 text-dark" style="max-width: 620px;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -330,27 +400,35 @@
         </div>
     </section>
 
-    <section class="orador-detalhe">
-        <div class="container-fluid px-4 px-lg-5 py-5">
-            <div class="row g-4 g-lg-5 align-items-start">
+    <section class="bg-light py-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start appear-on-scroll">
+
                 <div class="col-12 col-lg-6">
-                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="orador-detalhe-img">
+                    <img src="images/equipa/anasofia.png" alt="Ana Sofia Almeida" class="img-fluid w-100"
+                        style="object-fit: cover; max-height: 420px;">
                 </div>
+
                 <div class="col-12 col-lg-6">
                     <div class="d-flex gap-3 mb-3">
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="Instagram">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" class="orador-social text-decoration-none text-dark" aria-label="LinkedIn">
+                        <a href="#" class="fs-3 text-dark">
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-                    <h2 class="orador-detalhe-titulo">Ana Sofia Almeida</h2>
-                    <p class="orador-detalhe-texto mb-0">
+
+                    <h2 class="fs-4 fw-normal text-secondary mb-3">
+                        Ana Sofia Almeida
+                    </h2>
+
+                    <p class="mb-0 text-dark" style="max-width: 620px;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
@@ -407,7 +485,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
-    <script src="js/appear.js"></script>
+    <script src="js/appear.js" defer></script>
 </body>
 
 </html>
