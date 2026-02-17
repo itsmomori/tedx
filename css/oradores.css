@@ -27,10 +27,26 @@ h4{
     background-color: #FAFAFA;
 }
 
+.membros-border {
+    border-bottom: 0.25px solid #000000;
+}
+
+.equipa-titulo {
+  position: relative;
+}
+
+.section-title {
+    position: sticky;
+    top: 90px;
+    z-index: 10;
+    padding-top: 2rem;
+    background-color: #FAFAFA;
+}
+
 .sticky-oradores {
     position: sticky;
     top: 90px;
-    z-index: 101;
+    z-index: 99;
     border-bottom: 0.25px solid #000000;
 }
 
@@ -58,22 +74,18 @@ h4{
   filter: blur(0);
 }
 
+.text-neutral {
+    color: #7D7D7D;
+}
+
 @media (max-width: 768px) {
     h3{
         font-size: 2.25rem;
     }
 
-    h4{
-        font-size: 1.125rem;
-    }
-
     .big-title{
         font-size: 3.25rem;
     }
-
-.text-neutral {
-    color: #7D7D7D;
-}
 
   .nomes li {
     font-size: 1.8rem;
