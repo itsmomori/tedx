@@ -1,0 +1,52 @@
+.membros {
+    background-color: #FAFAFA;
+}
+
+.membros-border {
+    border-bottom: 0.25px solid #000000;
+}
+
+.equipa-titulo {
+  position: relative;
+}
+
+.sticky-oradores {
+    position: sticky;
+    top: 90px;
+    z-index: 99;
+    border-bottom: 0.25px solid #000000;
+}
+
+.img-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-hover img {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.img-hover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FC1A26;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-hover:hover .overlay {
+    opacity: 1;
+}
+
+.img-hover:hover img {
+    transform: scale(1.05);
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+}

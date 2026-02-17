@@ -13,6 +13,10 @@ body {
     background-color: #FAFAFA;
 }
 
+.text-neutral {
+    color: #7D7D7D;
+}
+
 .btn-bilhetes {
     background-color: #FC1A26;
     color: #FAFAFA;
