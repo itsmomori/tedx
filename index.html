@@ -54,7 +54,7 @@
     <main>
         <div class="container-fluid p-0">
             <div class="position-relative text-white" style="background-color: #000;">
-                <div class="row g-0 align-items-center principal" style="min-height: 80vh;">
+                <div class="row g-0 align-items-center principal appear-on-scroll" style="min-height: 80vh;">
                     <!-- Logo -->
                     <div class="col-12 col-md-5 d-flex justify-content-center justify-content-md-end">
                         <img src="images/simbolo.png" alt="TEDx" class="logo">
@@ -80,7 +80,7 @@
 <section class="about position-relative py-3 pb-5 py-lg-6" style="background-color: red;">
     <div class="row justify-content-center align-items-center g-0">
         <div class="col-12 col-md-10 col-lg-8">
-            <div class="about-card shadow mt-5 mb-3 p-3 p-md-5">
+            <div class="about-card shadow mt-5 mb-3 p-3 p-md-5 appear-on-scroll">
                 <h2 class="mb-4 display-4 display-md-2">
                     TEDX UNIVERSIDADE<br>
                     DE COIMBRA 2026
@@ -103,9 +103,9 @@
 
     <section class="eventos bg-black text-white py-5">
         <div class="container">
-            <h2 class="mb-5 display-5">OS NOSSOS ÚLTIMOS EVENTOS</h2>
+            <h2 class="mb-5 display-5 appear-on-scroll">OS NOSSOS ÚLTIMOS EVENTOS</h2>
 
-            <div class="row g-3">
+            <div class="row g-3 appear-on-scroll">
                 <div class="col-12 col-lg-6">
                     <div class="img-box img-grande position-relative">
                         <img src="images/evento-1.png" class="img-fluid" alt="">
@@ -139,7 +139,7 @@
                 </div>
             </div>
 
-            <p class="mt-4 col-lg-8">
+            <p class="mt-4 col-lg-8 appear-on-scroll">
                 O tempo nem sempre segue uma linha reta. Há momentos em que algo falha, abranda ou se desvia do percurso
                 esperado, e é nesses instantes que surgem novas possibilidades.
             </p>
@@ -147,7 +147,7 @@
     </section>
 
     <section class="oradores-section position-relative py-5">
-        <div class="container mt-3">
+        <div class="container mt-3 appear-on-scroll">
             <div class="row align-items-start">
 
                 <!-- esquerdo -->
@@ -194,11 +194,11 @@
             <div style="max-width: 150px;">
                 <h5 class="mb-3 fs-4">TEDX</h5>
                 <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><a href="#!" class="sub-cor text-decoration-none">Home</a></li>
-                    <li class="mb-2"><a href="#!" class="sub-cor text-decoration-none">Programa</a></li>
-                    <li class="mb-2"><a href="#!" class="sub-cor text-decoration-none">Oradores</a></li>
-                    <li class="mb-2"><a href="#!" class="sub-cor text-decoration-none">Equipa</a></li>
-                    <li class="mb-2"><a href="#!" class="sub-cor text-decoration-none">Edições</a></li>
+                    <li class="mb-2"><a href="index.html" class="sub-cor text-decoration-none active">Home</a></li>
+                    <li class="mb-2"><a href="programa.html" class="sub-cor text-decoration-none">Programa</a></li>
+                    <li class="mb-2"><a href="oradores.html" class="sub-cor text-decoration-none">Oradores</a></li>
+                    <li class="mb-2"><a href="equipa.html" class="sub-cor text-decoration-none">Equipa</a></li>
+                    <li class="mb-2"><a href="edicoes.html" class="sub-cor text-decoration-none">Edições</a></li>
                 </ul>
             </div>
         </div>
@@ -222,6 +222,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+        <script src="js/appear.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,31 @@
+.titulo-programa {
+    letter-spacing: 3px;
+}
+
+.texto-programa {
+    color: #cfcfcf;
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.contador-numero {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.contador-label {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.progress,
+.progress-bar {
+    border-radius: 0 !important;
+}
+
+.progress-bar {
+    width: 70%;
+    height: 6px;
+    background: linear-gradient(to right, #560106, #FC1A26);
+}
