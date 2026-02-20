@@ -2,6 +2,12 @@
 	color: #E1E1E1;
 }
 
+.oradores-section .display-1 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
 h3{
     font-size: 4.25rem;
     font-weight: 400;
@@ -17,10 +23,16 @@ h4{
 }
 
 .big-title{
-    font-size: 6.875rem;
+    font-size: 4rem;
     font-weight: 400;
     display: inline-block;
     margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .big-title {
+        font-size: 6.875rem;
+    }
 }
 
 .sticky-oradores {
