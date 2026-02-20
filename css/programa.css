@@ -29,3 +29,136 @@
     height: 6px;
     background: linear-gradient(to right, #560106, #FC1A26);
 }
+
+.programa-item{
+  position:relative;
+  display:flex;
+  align-items:center;
+  margin:32px 0;
+}
+
+.hora{
+  width:90px;
+  font-weight:700;
+  color:#c40000;
+  font-size:20px;
+}
+
+.nav-tabs .nav-link{
+  border:none;
+  background:none;
+}
+
+.nav-tabs .nav-link.active{
+  color:#c40000 !important;
+  font-weight:700;
+  background-color: transparent;
+}
+
+.programa-item::after{
+  content:"";
+  position:absolute;
+  left: 0;
+  right:0;
+  bottom:-10px;
+  border-bottom:1px solid #222;
+}
+
+.programa-item::before{
+  content:"";
+  position:absolute;
+  left:60px;
+  bottom:-22px;
+  width:24px;
+  height:24px;
+  background:#FAFAFA;
+  border-left:1px solid #222;
+  border-bottom:1px solid #222;
+  transform:rotate(-45deg);
+  z-index: 1;
+}
+
+.conteudo{
+  flex:1;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.avatar{
+  width:26px;
+  height:26px;
+  border-radius:4px;
+  object-fit:cover;
+}
+
+.accordion-button{
+  background:none;
+  box-shadow:none;
+  border:none;
+  padding:18px 0;
+  font-size:18px;
+  background-color: #FAFAFA;
+}
+
+.accordion-button::after{
+  display:none;
+}
+
+.faq-item{
+  border-bottom:1px solid #222;
+  position:relative;
+}
+
+.faq-item::after{
+  content:"";
+  position:absolute;
+  left:80px;
+  bottom:-17px;
+  width:32px;
+  height:32px;
+  background:#FAFAFA;
+  border-left:1px solid #000000;
+  border-bottom:1px solid #000000;
+  transform:rotate(-45deg);
+  z-index:20;
+}
+
+.accordion-body,
+.accordion-button,
+.accordion-item {
+    background-color: #FAFAFA;
+}
+
+.faq-btn::before{
+  content:"+";
+  margin-right:12px;
+  font-weight:400;
+  font-size: 2.3rem;
+  color: #7D7D7D;
+}
+
+.faq-btn:not(.collapsed)::before{
+  content:"−";
+}
+
+.accordion-flush .accordion-item:last-child{
+  border-bottom:1px solid #222 !important;
+}
+
+.accordion-button:focus{
+  box-shadow:none;
+  outline:none;
+}
+
+.accordion-button:not(.collapsed){
+  background-color:#FAFAFA;
+  box-shadow:none;
+}
+
+.sticky-oradores {
+    position: sticky;
+    top: 90px;
+    z-index: 99;
+    border-bottom: 0.25px solid #000000;
+}
