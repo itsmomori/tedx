@@ -55,17 +55,17 @@
     <main class="bg-black text-white">
         <div class="container-fluid py-2 py-md-5 mt-4 px-3 px-md-5">
 
-            <h1 class="display-1 fw-light mb-4 titulo-programa">PROGRAMA</h1>
+            <h1 class="display-1 fw-light mb-4 titulo-programa fade-left appear-on-scroll">PROGRAMA</h1>
 
-            <h4 class="lead col-lg-7 texto-programa">
+            <h4 class="lead col-lg-7 texto-programa fade-left appear-on-scroll">
                 O tempo nem sempre segue uma linha reta. Quando se desvia, surgem momentos inesperados.
                 Descubra o nosso programa para dia 14 de abril.
             </h4>
 
-            <div class="mt-5">
+            <div class="mt-5 fade-right appear-on-scroll">
                 <p class="text-uppercase fs-3 mb-4">FALTAM:</p>
 
-                <div class="row text-start">
+                <div class="row text-start fade-right appear-on-scroll">
 
                     <div class="col-6 col-md-3 mb-4">
                         <div id="dias" class="contador-numero">00</div>
@@ -90,7 +90,7 @@
 
             </div>
         </div>
-        <div class="progress w-100 mb-5" style="height:20px;">
+        <div class="progress w-100 mb-5 fade-right appear-on-scroll" style="height:20px;">
             <div id="barraProgresso" class="progress-bar" style="height:20px;"></div>
         </div>
         <div class="d-flex justify-content-center" style="background-color: #FAFAFA;">
@@ -102,12 +102,12 @@
         <div class="row g-4 align-items-start">
 
             <!-- ESQUERDA -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 fade-left appear-on-scroll">
                 <img src="images/programa.jpg" class="img-fluid w-100 shadow" alt="">
             </div>
 
             <!-- DIREITA -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 fade-right appear-on-scroll">
                 <ul class="nav nav-tabs border-0 mb-4" role="tablist">
                     <li class="nav-item">
                         <button class="nav-link active text-secondary p-0 fs-4" data-bs-toggle="tab" data-bs-target="#manha">
@@ -244,7 +244,7 @@
             </div>
         </div>
         
-        <div class="accordion accordion-flush" id="faqAccordion">
+        <div class="accordion accordion-flush fade-left appear-on-scroll" id="faqAccordion">
 
             <div class="accordion-item faq-item">
                 <h2 class="accordion-header mt-2">
@@ -378,6 +378,7 @@
         crossorigin="anonymous"></script>
 
     <script src="js/contador.js"></script>
+    <script src="js/appear.js" defer></script>
 </body>
 
 </html>
