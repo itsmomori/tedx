@@ -1,0 +1,117 @@
+.edicao-section {
+    min-height: 800px;
+    overflow: hidden;
+}
+
+.edicao-img {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.edicao-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.edicao-section::before {
+    content: "";
+    position: absolute;
+    top: -390px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    transform: skewY(10deg);
+    transform-origin: top left;
+    z-index: 4;
+}
+
+.edicao-section::after,
+.edicao-final::after {
+    content: "";
+    position: absolute;
+    bottom: -210px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    transform: skewY(10deg);
+    z-index: 1;
+}
+
+.edicao-v1::before,
+.edicao-v3::after,
+.edicao-v4::before,
+.edicao-v6::after,
+.edicao-v7::before {
+    background: #FC1A26;
+}
+
+.edicao-v1::after,
+.edicao-v4::after,
+.edicao-v5::before,
+.edicao-v7::after {
+    background: #000;
+}
+
+.edicao-v2::before {
+    background: #000;
+}
+
+.edicao-v2::after,
+.edicao-v3::before,
+.edicao-v5::after,
+.edicao-v6::before {
+    background: #FAFAFA;
+}
+
+.titulo-edicao {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.v2,
+.border-dark {
+    color: #000;
+}
+
+.border-light {
+    color: #FAFAFA;
+}
+
+.badge {
+    border-radius: 0 !important;
+}
+
+.footer-custom {
+    position: relative;
+    z-index: 5;
+}
+
+.footer-custom::after {
+    content: "";
+    position: absolute;
+    top: -386px;
+    left: 0;
+    width: 100%;
+    height: 388px;
+    background: #000;
+    transform: skewY(10deg);
+    transform-origin: top left;
+    z-index: 1;
+}
+
+.logo {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+    .titulo-edicao {
+        font-size: 2.3rem;
+    }
+
+    .edicao-section {
+        min-height: 600px;
+    }
+}

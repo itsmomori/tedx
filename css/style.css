@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -270,19 +274,6 @@ body {
   opacity: 1;
   transform: translateX(0) translateY(0);
 }
-@media (max-width: 768px) {
-    h3{
-        font-size: 2.25rem;
-    }
-
-    .big-title{
-        font-size: 3.25rem;
-    }
-
-  .nomes li {
-    font-size: 1.8rem;
-  }
-}
 
 @media (prefers-reduced-motion: reduce) {
     .appear-on-load,
@@ -320,5 +311,16 @@ body {
         border-radius: 0;
         padding: 0 1rem;
     }
+        h3{
+        font-size: 2.25rem;
+    }
+
+    .big-title{
+        font-size: 3.25rem;
+    }
+
+  .nomes li {
+    font-size: 1.8rem;
+  }
 }
 
