@@ -35,9 +35,19 @@ h4{
     }
 }
 
+@media (min-width: 992px) { /* lg breakpoint */
+    .sticky-oradores {
+        top: 102px;
+    }
+}
+
 .sticky-oradores {
     position: sticky;
-    top: 90px;
     z-index: 99;
     border-bottom: 0.25px solid #000000;
+    top: 94px;
+}
+
+.sticky-oradores p {
+    font-weight: 600; /* semi-bold */
 }

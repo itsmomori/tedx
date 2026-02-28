@@ -1,12 +1,15 @@
-html, body {
-  overflow-x: hidden;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     background-color: black;
     overflow-x:hidden;
+    padding-top: 94px; /* Altura da navbar em mobile */
+}
+
+@media (min-width: 992px) { /* lg breakpoint */
+    body {
+        padding-top: 102px; /* Altura da navbar em desktop */
+    }
 }
 
 .bg-black {
@@ -34,6 +37,9 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index:100;
 }
 
