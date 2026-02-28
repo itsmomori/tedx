@@ -12,9 +12,15 @@
 
 .sticky-oradores {
     position: sticky;
-    top: 90px;
+    top: 64px;
     z-index: 99;
     border-bottom: 0.25px solid #000000;
+}
+
+@media (min-width: 992px) { /* lg breakpoint */
+    .sticky-oradores {
+        top: 102px;
+    }
 }
 
 .img-hover {
