@@ -16,8 +16,12 @@ body {
     background-color: #000;
 }
 
+.bg-light {
+    background-color: #E6E6E6 !important;
+}
+
 .bg-white {
-    background-color: #FAFAFA;
+    background-color: #E6E6E6;
 }
 
 .text-neutral {
@@ -26,14 +30,14 @@ body {
 
 .btn-bilhetes {
     background-color: #FC1A26;
-    color: #FAFAFA;
+    color: #E6E6E6;
     border: none;
     border-radius: 0px;
 }
 
 .btn-bilhetes:hover {
     background-color: #e5161f;
-    color: #FAFAFA;
+    color: #E6E6E6;
 }
 
 .navbar {
@@ -46,7 +50,7 @@ body {
 .navbar-toggler-icon-custom {
     width: 24px;
     height: 2px;
-    background-color: #FAFAFA;
+    background-color: #E6E6E6;
     display: block;
     position: relative;
     transition: background-color 0.3s ease;
@@ -57,7 +61,7 @@ body {
     content: "";
     width: 24px;
     height: 2px;
-    background-color: #FAFAFA;
+    background-color: #E6E6E6;
     position: absolute;
     left: 0;
     transition: transform 0.3s ease, top 0.3s ease;
@@ -86,7 +90,7 @@ body {
 }
 
 .logo {
-    height: 50vh;
+    height: 50h;
     width: auto;
 }
 
@@ -104,7 +108,7 @@ body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     position: relative;
     z-index: 2;
-    background-color: #FAFAFA;
+    background-color: #E6E6E6;
     max-width: 900px;
     margin: 0 auto;
     padding: 3rem;
@@ -141,7 +145,7 @@ body {
     top: 50%;
     width: 120%;
     height: 350px;
-    background-color: #FAFAFA;
+    background-color: #E6E6E6;
     transform: rotate(15deg);
     z-index: 1;
 }
@@ -159,7 +163,7 @@ body {
 }
 
 .oradores-section {
-    background-color: #FAFAFA;
+    background-color: #E6E6E6;
       overflow: hidden;
 }
 
@@ -225,24 +229,31 @@ body {
     left: 40%;
     width: 200vw;
     height: 500px;
-    background: #FAFAFA;
+    background: #E6E6E6;
     transform: translate(-50%, -50%) rotate(10deg);
     transform-origin: center;
     z-index: 1;
 }
 
-.footer-x{
-    width:40%;
-    position:absolute;
-    right:3rem;
-    top:8rem;
+.footer-x {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+}
+
+.social-svg {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
 }
 
 .footer-custom a.active {
     color: #fff !important;
 }
 
-.social-icon i {
+.social.social i {
     transition: color 0.3s;
 }
 
@@ -293,7 +304,7 @@ body {
 
 @media (max-width: 768px) {
     .footer-custom::before {
-        top: -30%;
+        top: -0%;
     }
 
     .about::before {

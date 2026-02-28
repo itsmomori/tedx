@@ -3,7 +3,7 @@
 }
 
 .texto-programa {
-    color: #cfcfcf;
+    color: #E6E6E6;
     font-size: 1.625rem;
     font-weight: 400;
 }
@@ -71,7 +71,7 @@
   bottom:-22px;
   width:24px;
   height:24px;
-  background:#FAFAFA;
+  background:#E6E6E6;
   border-left:1px solid #222;
   border-bottom:1px solid #222;
   transform:rotate(-45deg);
@@ -96,7 +96,7 @@
     .nav-tabs {
         position: sticky;
         top: 94px;
-        background-color: #FAFAFA;
+        background-color: #E6E6E6;
         z-index: 98;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -109,7 +109,7 @@
   border:none;
   padding:18px 0;
   font-size:18px;
-  background-color: #FAFAFA;
+  background-color: #E6E6E6;
 }
 
 .accordion-button::after{
@@ -128,7 +128,7 @@
   bottom:-17px;
   width:32px;
   height:32px;
-  background:#FAFAFA;
+  background:#E6E6E6;
   border-left:1px solid #000000;
   border-bottom:1px solid #000000;
   transform:rotate(-45deg);
@@ -138,7 +138,7 @@
 .accordion-body,
 .accordion-button,
 .accordion-item {
-    background-color: #FAFAFA;
+    background-color: #E6E6E6;
 }
 
 .faq-btn::before{
@@ -163,7 +163,7 @@
 }
 
 .accordion-button:not(.collapsed){
-  background-color:#FAFAFA;
+  background-color:#E6E6E6;
   box-shadow:none;
 }
 

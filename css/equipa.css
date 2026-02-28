@@ -1,5 +1,5 @@
 .membros {
-    background-color: #FAFAFA;
+    background-color: #E6E6E6;
 }
 
 .membros-border {
@@ -12,15 +12,12 @@
 
 .sticky-oradores {
     position: sticky;
-    top: 64px;
     z-index: 99;
     border-bottom: 0.25px solid #000000;
+        top: 94px;
 }
 
 @media (min-width: 992px) { /* lg breakpoint */
-    .sticky-oradores {
-        top: 102px;
-    }
 }
 
 .img-hover {

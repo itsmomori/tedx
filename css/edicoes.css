@@ -62,7 +62,7 @@
 .edicao-v3::before,
 .edicao-v5::after,
 .edicao-v6::before {
-    background: #FAFAFA;
+    background: #E6E6E6;
 }
 
 .titulo-edicao {
@@ -77,7 +77,7 @@
 }
 
 .border-light {
-    color: #FAFAFA;
+    color: #E6E6E6;
 }
 
 .badge {
