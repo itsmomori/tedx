@@ -144,27 +144,30 @@ body {
     left: -10%;
     top: 50%;
     width: 120%;
-    height: 350px;
+    height: 600px;
     background-color: #E6E6E6;
-    transform: rotate(15deg);
+    transform: rotate(10deg);
     z-index: 1;
-}
-
-.about::after {
-    content: "";
-    position: absolute;
-    left: -10%;
-    top: 80%;
-    width: 120%;
-    height: 450px;
-    background: black;
-    transform: rotate(15deg);
-    z-index: 0;
 }
 
 .oradores-section {
     background-color: #E6E6E6;
       overflow: hidden;
+      position: relative;
+          min-height: 1000px;
+}
+
+.oradores-section::after {
+    content: "";
+    position: absolute;
+    left: -10%;
+    top: 80%;
+    width: 120%;
+    height: 500px;
+    background-color: #000000;
+    transform: rotate(10deg);
+    z-index: 1;
+    padding-top: 13rem;
 }
 
 .img-box {
@@ -312,14 +315,6 @@ body {
         top: 7%;
         width: 160%;
         height: 700px;
-        transform: rotate(10deg);
-    }
-
-    .about::after {
-        left: -20%;
-        top: 60%;
-        width: 160%;
-        height: 400px;
         transform: rotate(10deg);
     }
         .about-card {
