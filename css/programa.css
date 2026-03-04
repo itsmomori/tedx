@@ -92,17 +92,6 @@
   object-fit:cover;
 }
 
-@media (max-width: 991.98px) {
-    .nav-tabs {
-        position: sticky;
-        top: 94px;
-        background-color: #E6E6E6;
-        z-index: 98;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-}
-
 .accordion-button{
   background:none;
   box-shadow:none;
@@ -169,7 +158,47 @@
 
 .sticky-oradores {
     position: sticky;
-    top: 90px;
+    top: 94px;
     z-index: 99;
     border-bottom: 0.25px solid #000000;
+}
+
+.accordion {
+  min-height: 900px;
+  overflow-y: hidden;
+  z-index: 3;
+}
+
+.accordion:last-child {
+  padding-bottom: 50px;
+}
+
+.col-lg-6 {
+    overflow: visible;
+}
+
+@media (max-width: 768px) {
+  .sticky-oradores {
+    top: 65px;
+  }
+
+  .programa-item::after{
+  content:"";
+  position:absolute;
+  left: 0;
+  right:0;
+  bottom:-10px;
+  border-bottom:1px solid #222;
+}
+}
+
+@media (max-width: 991.98px) {
+    .nav-tabs {
+        position: sticky;
+        top: 65px;
+        background-color: #E6E6E6;
+        z-index: 98;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }

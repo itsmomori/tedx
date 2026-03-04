@@ -1,274 +1,275 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    background-color: black;
-    overflow-x:hidden;
-    padding-top: 64px; /* Altura da navbar em mobile */
-}
-
-@media (min-width: 992px) { /* lg breakpoint */
-    body {
-        padding-top: 102px; /* Altura da navbar em desktop */
-    }
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 64px;
 }
 
 .bg-black {
-    background-color: #000;
+  background-color: #000;
 }
 
 .bg-light {
-    background-color: #E6E6E6 !important;
+  background-color: #e6e6e6 !important;
 }
 
 .bg-white {
-    background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .text-neutral {
-    color: #7D7D7D;
+  color: #7d7d7d;
 }
 
 .btn-bilhetes {
-    background-color: #FC1A26;
-    color: #E6E6E6;
-    border: none;
-    border-radius: 0px;
+  background-color: #fc1a26;
+  color: #e6e6e6;
+  border: none;
+  border-radius: 0px;
 }
 
 .btn-bilhetes:hover {
-    background-color: #e5161f;
-    color: #E6E6E6;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index:100;
+  background-color: #e5161f;
+  color: #e6e6e6;
 }
 
 .navbar-toggler-icon-custom {
-    width: 24px;
-    height: 2px;
-    background-color: #E6E6E6;
-    display: block;
-    position: relative;
-    transition: background-color 0.3s ease;
+  width: 24px;
+  height: 2px;
+  background-color: #e6e6e6;
+  display: block;
+  position: relative;
+  transition: background-color 0.3s ease;
 }
 
 .navbar-toggler-icon-custom::before,
 .navbar-toggler-icon-custom::after {
-    content: "";
-    width: 24px;
-    height: 2px;
-    background-color: #E6E6E6;
-    position: absolute;
-    left: 0;
-    transition: transform 0.3s ease, top 0.3s ease;
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: #e6e6e6;
+  position: absolute;
+  left: 0;
+  transition:
+    transform 0.3s ease,
+    top 0.3s ease;
 }
 
 .navbar-toggler-icon-custom::before {
-    top: -7px;
+  top: -7px;
 }
 
 .navbar-toggler-icon-custom::after {
-    top: 7px;
+  top: 7px;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon-custom {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon-custom::before {
-    top: 0;
-    transform: rotate(45deg);
+  top: 0;
+  transform: rotate(45deg);
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon-custom::after {
-    top: 0;
-    transform: rotate(-45deg);
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 .logo {
-    height: 50h;
-    width: auto;
+  height: 50vh;
+  width: auto;
 }
 
 .seta {
-    width: 0;
-    height: 0;
-    border: 0 solid transparent;
-    border-left-width: 100px;
-    border-right-width: 100px;
-    border-top: 100px solid rgb(0, 0, 0);
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-left-width: 100px;
+  border-right-width: 100px;
+  border-top: 100px solid rgb(0, 0, 0);
 }
 
 .about-card {
-    z-index: 2;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    position: relative;
-    z-index: 2;
-    background-color: #E6E6E6;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 3rem;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  z-index: 2;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 2;
+  background-color: #e6e6e6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
 .about h2 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 .about p {
-    font-family: "Montserrat", sans-serif;
-    color: #9b9b9b;
-    line-height: 1.7;
+  font-family: "Montserrat", sans-serif;
+  color: #9b9b9b;
+  line-height: 1.7;
 }
 
 .sub-cor {
-    color: #9b9b9b;
+  color: #9b9b9b;
 }
 
 .about {
-    position: relative;
-    background-color: #ff0000;
-    padding: 6rem 1rem 8rem;
-    overflow: hidden;
+  position: relative;
+  background-color: #ff0000;
+  padding: 6rem 1rem 8rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .about::before {
-    content: "";
-    position: absolute;
-    left: -10%;
-    top: 50%;
-    width: 120%;
-    height: 600px;
-    background-color: #E6E6E6;
-    transform: rotate(10deg);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  width: 120%;
+  height: 600px;
+  background-color: #e6e6e6;
+  transform: rotate(10deg);
+  z-index: 1;
 }
 
-.oradores-section {
-    background-color: #E6E6E6;
-      overflow: hidden;
-      position: relative;
-          min-height: 1000px;
+.oradores-section-home {
+  background-color: #e6e6e6;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  min-height: 1000px;
 }
 
-.oradores-section::after {
-    content: "";
-    position: absolute;
-    left: -10%;
-    top: 80%;
-    width: 120%;
-    height: 500px;
-    background-color: #000000;
-    transform: rotate(10deg);
-    z-index: 1;
-    padding-top: 13rem;
+.oradores-section-home::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 80%;
+  width: 120%;
+  height: 500px;
+  background-color: #000000;
+  transform: rotate(10deg);
+  z-index: 1;
+  padding-top: 13rem;
 }
 
 .img-box {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .img-grande {
-    height: 100%;
-    min-height: 450px;
+  height: 100%;
+  min-height: 450px;
 }
 
 .img-pequena {
-    height: 220px;
+  height: 220px;
 }
 
 .img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .nomes li {
-    font-size: 3rem;
-    font-weight: 340;
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-    position: relative;
-    padding-bottom: 1rem;
-    transform: rotate(10deg);
+  font-size: 3rem;
+  font-weight: 340;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-top: 3rem;
+  transform: rotate(10deg);
+  overflow: visible;
 }
 
 .nomes li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 150%;
-    height: 1.5px;
-    background: #000;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150%;
+  height: 1.5px;
+  background: #000;
 }
 
 .big-text {
-    font-size: 15rem;
-    font-weight: 300;
-    line-height: 1;
+  font-size: 15rem;
+  font-weight: 300;
+  line-height: 1;
 }
 
 .footer-custom {
-    min-height: 700px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  min-height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 .footer-custom::before {
-    content: "";
-    position: absolute;
-    top: -10%;
-    left: 40%;
-    width: 200vw;
-    height: 500px;
-    background: #E6E6E6;
-    transform: translate(-50%, -50%) rotate(10deg);
-    transform-origin: center;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 40%;
+  width: 200vw;
+  height: 500px;
+  background: #e6e6e6;
+  transform: translate(-50%, -50%) rotate(10deg);
+  transform-origin: center;
+  z-index: 1;
 }
 
 .footer-x {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+}
+
+.direito {
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .social-svg {
-    width: 24px;
-    height: 24px;
-    filter: invert(1);
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
 }
 
 .footer-custom a.active {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 .social.social i {
-    transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .social-icon:hover i {
-    color: #ff0000;
+  color: #ff0000;
 }
 
 /* Estado inicial */
 .appear-on-scroll {
   opacity: 0;
+      overflow-x:hidden;
   transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 /* animação base */
@@ -276,7 +277,9 @@ body {
 .fade-right {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 /* esquerda */
@@ -296,40 +299,40 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .appear-on-load,
-    .appear-on-load.is-visible {
-        opacity: 1;
-        transform: none;
-        filter: none;
-        transition: none;
-    }
+  .appear-on-load,
+  .appear-on-load.is-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
 }
 
 @media (max-width: 768px) {
-    .footer-custom::before {
-        top: -0%;
-    }
+  .footer-custom::before {
+    top: -30%;
+  }
 
-    .about::before {
-        left: -20%;
-        top: 7%;
-        width: 160%;
-        height: 700px;
-        transform: rotate(10deg);
-    }
-        .about-card {
-        background-color: transparent;
-        box-shadow: none !important;
-        border-radius: 0;
-        padding: 0 1rem;
-    }
-        h3{
-        font-size: 2.25rem;
-    }
+  .about::before {
+    left: -20%;
+    top: 7%;
+    width: 160%;
+    height: 700px;
+    transform: rotate(10deg);
+  }
+  .about-card {
+    background-color: transparent;
+    box-shadow: none !important;
+    border-radius: 0;
+    padding: 0 1rem;
+  }
+  h3 {
+    font-size: 2.25rem;
+  }
 
-    .big-title{
-        font-size: 3.25rem;
-    }
+  .big-title {
+    font-size: 3.25rem;
+  }
 
   .nomes li {
     font-size: 1.8rem;
@@ -337,19 +340,18 @@ body {
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index:100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 @media (max-width: 991.98px) {
-    .navbar-brand img {
-        height: 40px;
-    }
-    .navbar .btn-bilhetes {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .navbar .btn-bilhetes {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
-

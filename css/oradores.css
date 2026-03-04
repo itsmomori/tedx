@@ -6,6 +6,11 @@
     word-break: break-word;
     overflow-wrap: break-word;
     max-width: 100%;
+    overflow-y: hidden;
+}
+
+.direito {
+        min-height: 700px;
 }
 
 h3{
@@ -29,15 +34,30 @@ h4{
     margin-right: 0.5rem;
 }
 
+.nomes li img {
+    height: 3rem;
+    vertical-align: middle;
+}
+
+.nomes li:last-child {
+    margin-top: 4rem;
+}
+
+.nomes li:last-child::after {
+    bottom: -2rem;
+}
+
 @media (min-width: 768px) {
     .big-title {
         font-size: 6.875rem;
     }
 }
 
+@media (max-width: 768px) {
 .sticky-oradores {
     position: sticky;
     z-index: 99;
     border-bottom: 0.25px solid #000000;
-    top: 94px;
+    top: 65px;
+}
 }

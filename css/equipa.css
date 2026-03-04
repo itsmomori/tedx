@@ -14,10 +14,13 @@
     position: sticky;
     z-index: 99;
     border-bottom: 0.25px solid #000000;
-        top: 94px;
+    top: 94px;
 }
 
-@media (min-width: 992px) { /* lg breakpoint */
+.direito {
+    overflow-y: hidden;
+    overflow-x: hidden;
+        min-height: 750px;
 }
 
 .img-hover {
@@ -52,4 +55,13 @@
 
 .social-icons a {
     font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+.sticky-oradores {
+    position: sticky;
+    z-index: 99;
+    border-bottom: 0.25px solid #000000;
+    top: 65px;
+}
 }
