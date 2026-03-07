@@ -140,6 +140,18 @@ body {
   z-index: 1;
 }
 
+.about::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  width: 120%;
+  height: 430px;
+  background-color: #e6e6e6;
+  transform: rotate(10deg);
+  z-index: 1;
+}
+
 .oradores-section-home {
   background-color: #e6e6e6;
   overflow-x: hidden;
@@ -337,6 +349,17 @@ body {
   .nomes li {
     font-size: 1.8rem;
   }
+
+  .oradores-section-home::after {
+  left: -15%;
+  top: 95%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .oradores-section-home::after {
+  top: 93%;
+}
 }
 
 .navbar {
