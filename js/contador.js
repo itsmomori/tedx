@@ -1,5 +1,5 @@
 const dataInicio = new Date("February 18, 2026 00:00:00").getTime();
-    const dataEvento = new Date("April 14, 2026 00:00:00").getTime();
+    const dataEvento = new Date("April 18, 2026 00:00:00").getTime();
 
     const contador = setInterval(function () {
 
