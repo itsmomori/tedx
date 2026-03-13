@@ -1,0 +1,38 @@
+.second::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 100%;
+  width: 120%;
+  height: 600px;
+  background-color: black;
+  transform: rotate(10deg);
+  z-index: 1;
+}
+
+.second::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 60%;
+  width: 120%;
+  height: 430px;
+  background-color: black;
+  transform: rotate(10deg);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .second, .mobile-color{
+        color: #E1E1E1;
+    }
+}
+
+@media (max-width: 767.98px) {
+  .second .about-card {
+    background-color: black;
+  }
+  .mobile-color {
+    color: #E1E1E1 !important;
+  }
+}
