@@ -17,10 +17,10 @@
     top: 94px;
 }
 
-.direito {
+.direito-equipa {
     overflow-y: hidden;
     overflow-x: hidden;
-        min-height: 750px;
+    min-height: 600px;
 }
 
 .img-hover {
@@ -63,5 +63,9 @@
     z-index: 99;
     border-bottom: 0.25px solid #000000;
     top: 65px;
+}
+
+.direito-equipa {
+    min-height: 425px;
 }
 }

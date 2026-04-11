@@ -10,7 +10,7 @@
 }
 
 .direito {
-        min-height: 700px;
+    min-height: 700px;
 }
 
 h3{
@@ -60,4 +60,7 @@ h4{
     border-bottom: 0.25px solid #000000;
     top: 65px;
 }
+
+.direito {
+    min-height: 550px;
 }
