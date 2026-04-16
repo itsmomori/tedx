@@ -33,8 +33,12 @@
 .programa-item{
   position:relative;
   display:flex;
-  align-items:center;
   margin:32px 0;
+}
+
+.conteudo-texto{
+  display: flex;
+  flex-direction: column;
 }
 
 .hora{
