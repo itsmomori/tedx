@@ -1,5 +1,5 @@
 const dataInicio = new Date("February 18, 2026 00:00:00").getTime();
-    const dataEvento = new Date("April 18, 2026 00:00:00").getTime();
+    const dataEvento = new Date("April 22, 2026 00:00:00").getTime();
 
     const contador = setInterval(function () {
 
@@ -7,15 +7,10 @@ const dataInicio = new Date("February 18, 2026 00:00:00").getTime();
         const distancia = dataEvento - agora;
 
         // CONTADOR
-        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-        document.getElementById("dias").innerHTML = dias;
-        document.getElementById("horas").innerHTML = horas;
-        document.getElementById("minutos").innerHTML = minutos;
-        document.getElementById("segundos").innerHTML = segundos;
+        document.getElementById("dias").innerHTML = 0;
+        document.getElementById("horas").innerHTML = 0;
+        document.getElementById("minutos").innerHTML = 0;
+        document.getElementById("segundos").innerHTML = 0;
 
         // PROGRESSO
         const totalDuracao = dataEvento - dataInicio;
